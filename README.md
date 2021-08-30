@@ -32,3 +32,15 @@ or (Windows):
 ```
 c:\\> zerol-enrollment-cleaner.exe -account_id 139 -course_id 1234 -file my_enrollments.txt -token my_token
 ```
+
+# Developer information
+
+This tool is written in [Go](https://golang.org), primarily to make it easy for us to provide self-contained binaries compiled for various platforms.
+
+During development, you can run the tool from the command line with `go run .`.
+
+To see which platforms you can compile for, run `go tool dist list`.
+
+To compile for a specific platform, run:
+`GOOS=windows go build` for Windows, or
+`GOOS=darwin go build` for Mac.
